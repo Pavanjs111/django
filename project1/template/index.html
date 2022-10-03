@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <br> 
+
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <img src="{% static 'images/Ave.jpg' %}" alt=" no image" height="275px"> 
+                    <hr>
+                    <h1>Most successful Marvel Studios movie of all</h1>
+                    <br>
+                    <h2>Broke the box office collection in the world</h2> 
+                    <p> This is movie on how the most famous super heros in the world will save it from the mad Titan </p>
+                    <form action="Ave">
+                        <input type="submit" class="btn btn-primary" value="show more">
+                   </form> 
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <img src="{% static 'images/KGF.jpg' %}" alt="no image">  
+                    <h1> Most successful Sandalwood movie in the world</h1>
+                    <br>
+                    <h2>The best sequel that was ever made </h2> 
+                    <p> The movie says a story of ambitious young boy who take over Kolar gold feilds for the promises that he had made to his mother</p>
+                    <form action="KGF2">
+                    <input type="submit" class="btn btn-primary" value="show more">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+
+        {% block content %}
+
+
+        {% endblock %}
+
+    </div>
+    <br>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String converter</title>
+</head>
+<body bgcolor="lightgreen">
+    <h1 > String converter</h1>
+    <form action="String_converter" method="POST">
+        {% csrf_token %}
+        Enter the string=<input type="text" name="enter_the_string"><br><br>
+        <!-- Enter 2nd number=<input type="text" name="num2"><br><br> -->
+        <button type="submit" name="converter">converter</button>
+        <!-- <button type="submit" name="upper">Upper</button>
+        <button type="submit" name="lower">Lower</button> -->
+        <button type="submit" name="title">title</button>
+        <!-- <button type="submit" name="mul">MUL</button>
+        <button type="submit" name="mod">MOD</button> -->
+        
+    </form>
+</body>
+</html>

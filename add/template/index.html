@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body bgcolor="green">
+    <h1 bgcolor="Blue"> Simple claculator</h1>
+    <form action="calculator" method="POST">
+        {% csrf_token %}
+        Enter 1st number=<input type="text" name="num1"><br><br>
+        Enter 2nd number=<input type="text" name="num2"><br><br>
+        <!-- <input action="add"  placeholder="add" type="button">
+        <input action="sub" placeholder="sub" type="button">
+        <input action="div" placeholder="div" type="button">
+        <input action="mul" placeholder="mul"type="button">
+        <input action="mod" placeholder="mod" type="button"> -->
+        <button type="submit" name="add">ADD</button>
+        <button type="submit" name="sub">SUB</button>
+        <button type="submit" name="div">DIV</button>
+        <button type="submit" name="mul">MUL</button>
+        <button type="submit" name="mod">MOD</button>
+        
+    </form>
+</body>
+</html>

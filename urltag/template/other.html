@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+    <div>
+        <div>
+            <h1>THis is other page!!!!!!</h1> 
+            <img src="{% static 'images/abc1.jpg'%}" alt="no image"> 
+            <h2> {{ insert_me | title }}</h2>
+        </div>
+    </div>
+   
+{% endblock %}

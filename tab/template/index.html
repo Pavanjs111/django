@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    {% for name in movies %}
+         <b><div>{{forloop.counter}}{{name}}</div></b>
+    {% endfor %}
+    
+    <table border="2px" cellpadding="5px"> 
+        <tr>
+            <th>name</th>
+            <th>adress</th>
+            <th>phone</th>
+        </tr>
+        {% for d in information %}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>{{d.address}}</td>
+            <td>{{d.phone}}</td>
+        </tr>
+        {% endfor %}
+        </table><br><br>
+        {% for k in std_details %}
+        <b><div>{{forloop.counter}}{{k.name}}</div></b>
+        {% endfor %}
+
+        <table border="2px" cellpadding="5px"> 
+            <tr>
+                <th>name</th>
+                <th>marks</th>
+                <th>grade</th>
+            </tr>
+            {% for t in std_details %}
+            {% if t.marks > 60 %}
+            <tr>
+                <td>{{t.name}}</td>
+                <td>{{t.marks}}</td>
+                <td>{{t.grade}}</td>
+            </tr>
+            {% endif %}
+        {% endfor %}
+        
+        
+        
+    </table>
+</body>
+</html>
